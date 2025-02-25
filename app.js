@@ -118,3 +118,93 @@ const first_message = {
     },
   ],
 };
+
+//  Новый формат событий
+
+// Стриминг текущего состояния оборудования с бэка на фронт
+const second_message = {
+  messageType: 'STREAM',
+  rotators: [
+    {
+      name: 'rotator1',
+      actualPosition: 10,
+      parkPosition: 150,
+      minPosition: 0,
+      maxPosition: 100,
+      state: MOVING,
+    },
+    {
+      name: 'rotator1',
+      actualPosition: 10,
+      parkPosition: 150,
+      minPosition: 0,
+      maxPosition: 100,
+      state: STOPPED,
+    },
+  ],
+  masts: [
+    {
+      name: 'mast1',
+      actualPosition: 10,
+      parkPosition: 150,
+      minPosition: 0,
+      maxPosition: 100,
+      state: MOVING,
+    },
+    {
+      name: 'mast2',
+      actualPosition: 10,
+      parkPosition: 150,
+      minPosition: 0,
+      maxPosition: 100,
+      state: STOPED,
+    },
+  ],
+};
+
+// команды управления от фронта на бэк (и обратно эхо ответ)
+const third_message = {
+  messageType: 'COMMAND',
+  rotators: [
+    {
+      name: 'rotator1',
+      action: go_to_park,
+      nominalPosition: 50,
+    },
+    {
+      name: 'rotator1',
+      action: go_to_nominal,
+      nominalPosition: 50,
+    },
+  ],
+  masts: [
+    {
+      name: 'mast1',
+      action: go_to_park,
+      nominalPosition: 50,
+    },
+    {
+      name: 'mast2',
+      action: go_to_nominal,
+      nominalPosition: 50,
+    },
+  ],
+  states: [
+    {
+      name: 'P1',
+      state: true,
+    },
+    {
+      name: 'P2',
+      state: false,
+    },
+    {
+      name: 'P3',
+      state: false,
+    },
+    {
+      name: 'P4',
+      state: false,
+    },
+  ],
+};
