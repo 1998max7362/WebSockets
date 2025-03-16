@@ -1,6 +1,6 @@
-const NUMBER_mastCurrentHeigh = {
+const NUMBER_mastCurrentHeight = {
   displayName: 'Текущая Высота мачты',
-  keyName: 'mastCurrentHeigh',
+  keyName: 'mastCurrentHeight',
   parameterType: 'NUMBER',
   context: {
     parameterUnit: 'м',
@@ -87,18 +87,22 @@ const CHECKBOX_AF = {
 
 const summary_with_buttons = {
   summaryType: 'WITH_BUTTONS',
-  summaryName: 'С кнопками',
+  summaryName: 'withButtons',
   elements: [
-    NUMBER_mastCurrentHeigh,
+    NUMBER_mastCurrentHeight,
     NUMBER_mastParkHeigh,
     NUMBER_mastNominalHeigh,
     BUTTON_LIST_MAST,
+    CHECKBOX_AF,
+    COMBOBOX_measMode,
+    NUMBER_CHECKBOX_measTime,
+    NUMBER_CentralFreq
   ],
 };
 
 const summary_no_buttons = {
   summaryType: 'NO_BUTTONS',
-  summaryName: 'Без кнопок',
+  summaryName: 'noButtons',
   elements: [NUMBER_CentralFreq, NUMBER_CHECKBOX_measTime, COMBOBOX_measMode, CHECKBOX_AF],
 };
 
@@ -111,7 +115,7 @@ const standartAccordion = {
 const externalEventAccordion = {
   accordionType: 'EXTERNAL_EVENT',
   accordionName: 'externalEventAccordion',
-  accordionSummaries: [summary_no_buttons],
+  accordionSummaries: [summary_no_buttons,summary_with_buttons],
 };
 
 export const GUIMessage_v1 = {
