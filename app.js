@@ -1,6 +1,6 @@
 import { WebSocketServer } from 'ws';
 import { GUIMessage_v1, GUIMessage_v2, GUIMessage_v3 } from './GUIMessage.js';
-import { paramsMessage_v3 } from './ParamsMessage.js';
+import { echoMessage, paramsMessage_v3 } from './ParamsMessage.js';
 
 const wss = new WebSocketServer({ port: 8080 });
 
@@ -18,14 +18,14 @@ wss.on('connection', function connection(ws) {
   //     sendMessage();
   //   }, 1000);
   // sendMessage();
-  setTimeout(() => ws.send(JSON.stringify(paramsMessage_v3)), 1000);
+  setTimeout(() => ws.send(JSON.stringify(echoMessage)), 1000);
 
   ws.on('message', function message(data) {
     const parsedData = JSON.parse(data);
-    console.log(parsedData)
+    console.log(parsedData);
     // parsedData.rotators[0].maxPosition = 300;
     // console.log('received: ', parsedData);
-    ws.send(JSON.stringify(paramsMessage_v3))
+    setTimeout(() => ws.send(JSON.stringify(echoMessage)), 2000);
   });
 
   ws.on('close', () => console.log('closed'));

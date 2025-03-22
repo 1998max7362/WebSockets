@@ -3,8 +3,8 @@ const NUMBER_mastCurrentHeight = {
   keyName: 'mastCurrentHeight',
   parameterType: 'NUMBER',
   context: {
-    parameterUnit: 'м',
-    unitList: [],
+    parameterUnit: 'M',
+    unitList: ['milli','standard','kilo'],
   },
 };
 
@@ -13,8 +13,8 @@ const NUMBER_mastParkHeigh = {
   keyName: 'mastParkHeigh',
   parameterType: 'NUMBER',
   context: {
-    parameterUnit: 'м',
-    unitList: [],
+    parameterUnit: 'M',
+    unitList: ['milli','standard','kilo'],
   },
 };
 
@@ -23,8 +23,8 @@ const NUMBER_mastNominalHeigh = {
   keyName: 'mastNominalHeigh',
   parameterType: 'NUMBER',
   context: {
-    parameterUnit: 'м',
-    unitList: [],
+    parameterUnit: 'M',
+    unitList: ['milli','standard','kilo'],
   },
 };
 
@@ -59,7 +59,7 @@ const NUMBER_CentralFreq = {
   parameterType: 'NUMBER',
   context: {
     parameterUnit: 'HZ',
-    unitList: ['standart', 'kilo', 'mega', 'giga'],
+    unitList: ['standard', 'kilo', 'mega', 'giga'],
   },
 };
 
@@ -68,8 +68,9 @@ const NUMBER_CHECKBOX_measTime = {
   keyName: 'measTime',
   parameterType: 'NUMBER_CHECKBOX',
   context: {
+    checkBoxLabel: "Авто",
     parameterUnit: 'S',
-    unitList: ['micro', 'milli', 'standart'],
+    unitList: ['micro', 'milli', 'standard'],
   },
 };
 
@@ -106,9 +107,9 @@ const summary_no_buttons = {
   elements: [NUMBER_CentralFreq, NUMBER_CHECKBOX_measTime, COMBOBOX_measMode, CHECKBOX_AF],
 };
 
-const standartAccordion = {
-  accordionType: 'STANDART',
-  accordionName: 'standartAccordion',
+const standardAccordion = {
+  accordionType: 'STANDARD',
+  accordionName: 'standardAccordion',
   accordionSummaries: [summary_with_buttons, summary_no_buttons],
 };
 
@@ -120,7 +121,7 @@ const externalEventAccordion = {
 
 export const GUIMessage_v1 = {
   messageType: 'GUI',
-  settings: [standartAccordion, { ...standartAccordion, accordionName: 'standartAccordion_1' }],
+  settings: [standardAccordion, { ...standardAccordion, accordionName: 'standardAccordion_1' }],
 };
 
 export const GUIMessage_v2 = {
@@ -131,8 +132,8 @@ export const GUIMessage_v2 = {
 export const GUIMessage_v3 = {
   messageType: 'GUI',
   settings: [
-    standartAccordion,
-    { ...standartAccordion, accordionName: 'standartAccordion_1' },
+    standardAccordion,
+    { ...standardAccordion, accordionName: 'standardAccordion_1' },
     externalEventAccordion,
   ],
 };
