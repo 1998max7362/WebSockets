@@ -1,6 +1,10 @@
 import { WebSocketServer } from 'ws';
-import { GUIMessage_v1, GUIMessage_v2, GUIMessage_v3 } from './GUIMessage.js';
-import { echoMessage, paramsMessage_v3 } from './ParamsMessage.js';
+// import { GUIMessage_v1, GUIMessage_v2, GUIMessage_v3 } from './GUIMessage.js';
+// import { echoMessage, paramsMessage_v3 } from './ParamsMessage.js';
+import * as fs from 'fs';
+
+const GUIMessage_v3 = JSON.parse(fs.readFileSync(process.cwd()+"\\GUI.json",'utf8'))
+const echoMessage = JSON.parse(fs.readFileSync(process.cwd()+"\\ECHO.json", 'utf8'))
 
 const wss = new WebSocketServer({ port: 8080 });
 

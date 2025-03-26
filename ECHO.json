@@ -1,0 +1,321 @@
+{
+    "elements": [
+        {
+            "accordionName": "АСРВ",
+            "keyName": "startFreqHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 2000000000,
+                "parameterType": "NUMBER",
+                "value": 1000000000
+            },
+            "summaryName": "Частота"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "stopFreqHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 1000000000,
+                "min": 1000000000000,
+                "parameterType": "NUMBER",
+                "value": 2000000000
+            },
+            "summaryName": "Частота"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "centerFreqHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 1500000000
+            },
+            "summaryName": "Частота"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "spanHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 1000000000
+            },
+            "summaryName": "Частота"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "refLeveldBm",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 0
+            },
+            "summaryName": "Уровень"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "rbwHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 10000
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "vbwHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 10000
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "sweepTime",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 0.001
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "traceBinSizeHz",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 10000
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "window",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "BlackmanNuttall",
+                "values": [
+                    "FlatTop",
+                    "BlackmanNuttall",
+                    "LowSideLobe"
+                ]
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "spurRejection",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "Bypass",
+                "values": [
+                    "Bypass",
+                    "Standard",
+                    "Enhanced"
+                ]
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "traceDetector",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "Bypass",
+                "values": [
+                    "AutoSample",
+                    "Sample",
+                    "PosPeak",
+                    "NegPeak",
+                    "RMS",
+                    "Bypass",
+                    "AutoPeak"
+                ]
+            },
+            "summaryName": "Развертка"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "referenceClockSource",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "Internal",
+                "values": [
+                    "Internal",
+                    "External",
+                    "InternalPremium",
+                    "ExternalForced"
+                ]
+            },
+            "summaryName": "Опорные сигналы"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "referenceClockFrequency",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 10000000
+            },
+            "summaryName": "Опорные сигналы"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "systemClockSource",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "Internal",
+                "values": [
+                    "Internal",
+                    "External"
+                ]
+            },
+            "summaryName": "Опорные сигналы"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "externalSystemClockFrequency",
+            "parameterType": "NUMBER",
+            "parameter": {
+                "max": 0,
+                "min": 1e+20,
+                "parameterType": "NUMBER",
+                "value": 10000000
+            },
+            "summaryName": "Опорные сигналы"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "triggerSource",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "InternalFreeRun",
+                "values": [
+                    "InternalFreeRun",
+                    "ExternalPerHop",
+                    "ExternalPerSweep",
+                    "ExternalPerProfile"
+                ]
+            },
+            "summaryName": "Триггер"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "triggerEdge",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "RisingEdge",
+                "values": [
+                    "RisingEdge",
+                    "FallingEdge",
+                    "DoubleEdge"
+                ]
+            },
+            "summaryName": "Триггер"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "triggerOutMode",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "None",
+                "values": [
+                    "None",
+                    "PerHop",
+                    "PerSweep",
+                    "PerProfile"
+                ]
+            },
+            "summaryName": "Триггер"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "triggerOutPulsePolarity",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "Positive",
+                "values": [
+                    "Positive",
+                    "Negative"
+                ]
+            },
+            "summaryName": "Триггер"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "gainStrategy",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "HighLinearityPreferred",
+                "values": [
+                    "LowNoisePreferred",
+                    "HighLinearityPreferred"
+                ]
+            },
+            "summaryName": "Вход"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "preamplifier",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "AutoOn",
+                "values": [
+                    "AutoOn",
+                    "ForcedOff"
+                ]
+            },
+            "summaryName": "Вход"
+        },
+        {
+            "accordionName": "АСРВ",
+            "keyName": "loOptimization",
+            "parameterType": "COMBOBOX",
+            "parameter": {
+                "parameterType": "COMBOBOX",
+                "value": "Auto",
+                "values": [
+                    "Auto",
+                    "Speed",
+                    "Spur",
+                    "PhaseNoise"
+                ]
+            },
+            "summaryName": "Вход"
+        }
+    ],
+    "messageType": "ECHO"
+}

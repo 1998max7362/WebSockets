@@ -1,0 +1,326 @@
+{
+    "messageType": "GUI",
+    "settings": [
+        {
+            "accordionName": "АСРВ",
+            "accordionSummaries": [
+                {
+                    "elements": [
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Начальная частота",
+                            "keyName": "startFreqHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Конечная частота",
+                            "keyName": "stopFreqHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Центральная частота",
+                            "keyName": "centerFreqHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Полоса",
+                            "keyName": "spanHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        }
+                    ],
+                    "summaryName": "Частота",
+                    "summaryType": "NO_BUTTONS"
+                },
+                {
+                    "elements": [
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "DB",
+                                "unitList": [
+                                    "micro",
+                                    "milli"
+                                ]
+                            },
+                            "displayName": "Опорный уровень",
+                            "keyName": "refLeveldBm",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        }
+                    ],
+                    "summaryName": "Уровень",
+                    "summaryType": "NO_BUTTONS"
+                },
+                {
+                    "elements": [
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Полоса ПЧ",
+                            "keyName": "rbwHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Полоса НЧ",
+                            "keyName": "vbwHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "S",
+                                "unitList": [
+                                    "micro",
+                                    "milli",
+                                    "standard"
+                                ]
+                            },
+                            "displayName": "Время свипирования",
+                            "keyName": "sweepTime",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega",
+                                    "giga"
+                                ]
+                            },
+                            "displayName": "Шаг по частоте",
+                            "keyName": "traceBinSizeHz",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Тип окна",
+                            "keyName": "window",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Подавление спур",
+                            "keyName": "spurRejection",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Детектор",
+                            "keyName": "traceDetector",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        }
+                    ],
+                    "summaryName": "Развертка",
+                    "summaryType": "NO_BUTTONS"
+                },
+                {
+                    "elements": [
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Опорный источник синхронизации",
+                            "keyName": "referenceClockSource",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega"
+                                ]
+                            },
+                            "displayName": "Частота опрного генератора",
+                            "keyName": "referenceClockFrequency",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Источник системной синхронизации",
+                            "keyName": "systemClockSource",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "NUMBER",
+                                "parameterUnit": "HZ",
+                                "unitList": [
+                                    "standard",
+                                    "kilo",
+                                    "mega"
+                                ]
+                            },
+                            "displayName": "Частота опрного системной синхронизации",
+                            "keyName": "externalSystemClockFrequency",
+                            "parameterType": "NUMBER",
+                            "useValidation": true
+                        }
+                    ],
+                    "summaryName": "Опорные сигналы",
+                    "summaryType": "NO_BUTTONS"
+                },
+                {
+                    "elements": [
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Источник синхронизации",
+                            "keyName": "triggerSource",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Фронт/Спад",
+                            "keyName": "triggerEdge",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Запуск",
+                            "keyName": "triggerOutMode",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Полярность импульса синхронизации",
+                            "keyName": "triggerOutPulsePolarity",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        }
+                    ],
+                    "summaryName": "Триггер",
+                    "summaryType": "NO_BUTTONS"
+                },
+                {
+                    "elements": [
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Усиление",
+                            "keyName": "gainStrategy",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Предусилитель",
+                            "keyName": "preamplifier",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        },
+                        {
+                            "context": {
+                                "parameterType": "COMBOBOX"
+                            },
+                            "displayName": "Параметры усиления",
+                            "keyName": "loOptimization",
+                            "parameterType": "COMBOBOX",
+                            "useValidation": true
+                        }
+                    ],
+                    "summaryName": "Вход",
+                    "summaryType": "NO_BUTTONS"
+                }
+            ],
+            "accordionType": "STANDARD"
+        }
+    ]
+}
